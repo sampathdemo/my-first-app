@@ -1,7 +1,15 @@
 <!--
   Property Binding [Element.attribute] = "method"
+  syntax : [] = ""
  -->
+ <!--
+   Event Binding (event) = "Method that is triggered"
+   syntax : () = ""
+  -->
 <button class="btn btn-primary"
-[disabled] = "!allowNewServer">Add Server</button>
+[disabled] = "!allowNewServer"
+(click) = "onCreateServer()">Add Server</button>
+
+<p>{{serverCreationStatus}}</p>
 <app-server></app-server>
 
