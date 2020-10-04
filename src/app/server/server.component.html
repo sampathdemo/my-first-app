@@ -1,14 +1,12 @@
-
 <!--
 String Interpolation
 {{ Entity }}
 Entity - should lead to a string
 Entiity can be direct string or variable or method
 syntax : {{}}
-
 -->
 
 <!-- <p>{{'server'}} with ID {{ serverId }} is {{ serverStatus }}</p> -->
 <p [ngStyle] = "{backgroundColor : getColor()}"
   [ngClass] = "{online : serverStatus === 'online'}"
->{{'server'}} with ID {{ serverId }} is {{ serverStatus }}</p>
+>{{'server'}} is {{ serverStatus }}</p>

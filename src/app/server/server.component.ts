@@ -8,11 +8,16 @@ import { Component } from '@angular/core';
     .online {
       color: white;
     }
+    p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
   `]
 })
 export class ServerComponent {
 
-  serverId: number = 10;
   serverStatus: string = 'offline';
 
   constructor(){
@@ -22,7 +27,7 @@ export class ServerComponent {
     return this.serverStatus;
   }
   getColor(){
-    return this.serverStatus === 'online' ? 'green' : 'red'
+    return this.serverStatus === 'online' ? '	lightseagreen' : 'salmon'
   }
 
 }
